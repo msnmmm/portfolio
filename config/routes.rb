@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
-  get 'static_pages/gallery'
+  get '/portfolio', to: 'static_pages#gallery', as:'portfolio'
 
-  get 'static_pages/about'
+  get '/about', to: 'static_pages#about', as:'about'
 
-  get 'static_pages/contact'
+  get '/contact', to: 'static_pages#contact', as:'contact'
 
-  get 'static_pages/home'
+  get '/home', to: 'static_pages#home', as:'home'
 
   root 'static_pages#home'
 
